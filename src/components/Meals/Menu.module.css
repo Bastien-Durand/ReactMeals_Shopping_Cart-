@@ -1,0 +1,12 @@
+.layout {
+  max-width: 60rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5rem;
+  position: relative;
+  background-color: #69c1e9;
+  color: white;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
