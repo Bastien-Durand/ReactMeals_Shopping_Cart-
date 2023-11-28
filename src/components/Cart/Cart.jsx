@@ -1,5 +1,5 @@
 import DUMMY_MEALS from "../data/dummyMeals";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { MenuOrderingContext } from "../store/MenuOrderingContext";
 import CartItem from "./CartItem";
 import styles from "./CartModal.module.css";
@@ -7,10 +7,8 @@ import styles from "./CartModal.module.css";
 const Cart = (props) => {
   const { itemsOrdered, setItemsOrdered } = useContext(MenuOrderingContext);
 
-  console.log("HERE: ", DUMMY_MEALS);
-  console.log("Context", itemsOrdered);
   if (!itemsOrdered) {
-    return <div>Cart is empty</div>;
+    return <div style={{ textAlign: "center" }}>Cart is empty</div>;
   }
   return (
     <div>
@@ -22,6 +20,7 @@ const Cart = (props) => {
         }}
       >
         <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+          <h1 className={styles.cartTitle}>Shopping Cart</h1> <hr />
           {Object.values(itemsOrdered)?.map((e) => {
             return (
               <CartItem

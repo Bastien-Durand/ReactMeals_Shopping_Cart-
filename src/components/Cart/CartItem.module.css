@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
+  padding: 0.5rem;
+  background-color: #69c1e9;
 }
 
 .buttonContainer {
@@ -11,8 +13,10 @@
 
 .input {
   width: 2.5rem;
+  text-align: center;
 }
 
 .cartButton {
+  margin: 3px;
   width: 10px;
 }

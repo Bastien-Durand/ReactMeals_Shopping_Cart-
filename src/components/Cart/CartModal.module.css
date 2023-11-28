@@ -13,13 +13,18 @@
   top: 20vh;
   left: 5%;
   width: 90%;
-  background-color: rgb(184, 184, 184);
-  padding: 2rem;
-  border-radius: 14px;
+  background-color: #69c1e9;
+  padding: 1rem;
+
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
   overflow-y: auto;
+}
+
+.cartTitle {
+  text-align: center;
 }
 
 @media (min-width: 768px) {

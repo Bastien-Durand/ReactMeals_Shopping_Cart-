@@ -31,17 +31,18 @@ const CartItem = (props) => {
       <div>
         <p className={styles.quantity}>
           Quantity{" "}
-          <input
-            type="number"
-            min="0"
-            className={styles.input}
-            value={quantity ?? 0}
-          />
+          <input min="0" className={styles.input} value={quantity ?? 0} />
         </p>
         <div className={styles.buttonContainer}>
           <button
             className={styles.cartButton}
-            onClick={() => updateCart(parseInt(quantity) - 1)}
+            onClick={() => {
+              if (quantity <= 0) {
+                return;
+              } else {
+                updateCart(parseInt(quantity) - 1);
+              }
+            }}
           >
             -
           </button>

@@ -6,7 +6,6 @@ import { useState } from "react";
 
 const App = () => {
   const [itemsOrdered, setItemsOrdered] = useState();
-  console.log("itemsOrdered", itemsOrdered);
   return (
     <>
       <MenuOrderingContext.Provider value={{ itemsOrdered, setItemsOrdered }}>
